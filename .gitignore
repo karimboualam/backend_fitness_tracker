@@ -1,0 +1,12 @@
+# .gitignore  :  Pour éviter de pousser des fichiers inutiles (comme le dossier venv) 
+# Environnements virtuels
+venv/
+*.pyc
+__pycache__/
+
+# Fichiers de configuration spécifiques
+*.sqlite3
+.env
+
+# Logs
+*.log
