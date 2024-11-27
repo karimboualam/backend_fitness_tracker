@@ -31,13 +31,22 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+        # Django default apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # L' application principale
     'fitness_tracker',  # Assurez-vous que le nom correspond à celui de votre application
+
+        # Lapplication `dashboard`
+         'dashboard',
+         'rest_framework',
+
+
 
 ]
 
