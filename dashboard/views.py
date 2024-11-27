@@ -1,3 +1,4 @@
+# Ajout un ViewSet pour les données de progression
 from django.shortcuts import render
 
 # Create your views here.

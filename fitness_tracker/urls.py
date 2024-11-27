@@ -1,3 +1,6 @@
+# Définir une route API.
+
+
 """
 URL configuration for fitness_tracker project.
 
