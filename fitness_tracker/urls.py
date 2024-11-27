@@ -1,4 +1,7 @@
 # Définir une route API.
+#Pour connecter votre ViewSet à l'API, 
+# ajoutez un routeur dans le fichier urls.py principal 
+# ou celui de l'application dashboard
 
 
 """
@@ -24,7 +27,7 @@ from dashboard.views import ProgressViewSet
 
 # Créez un routeur pour vos API
 router = DefaultRouter()
-router.register(r'progress', ProgressViewSet, basename='progress')
+router.register(r'progress', ProgressViewSet, basename='progress')  # /api/progress/
 
 urlpatterns = [
     path('admin/', admin.site.urls),  # L'URL pour accéder à l'interface d'administration
