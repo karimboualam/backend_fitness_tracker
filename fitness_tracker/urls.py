@@ -15,8 +15,15 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from dashboard.views import ProgressViewSet
+
+# Créez un routeur pour vos API
+router = DefaultRouter()
+router.register(r'progress', ProgressViewSet, basename='progress')
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),  # L'URL pour accéder à l'interface d'administration
+    path('api/', include(router.urls)),  # L'URL pour accéder aux API REST
 ]

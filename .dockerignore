@@ -1,0 +1,13 @@
+# Ignorer les dossiers inutiles
+node_modules
+venv
+__pycache__
+
+# Ignorer les fichiers de logs
+*.log
+
+# Ignorer les fichiers de bases de données locales
+*.sqlite3
+
+# Ignorer les fichiers liés à Git
+.git
